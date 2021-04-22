@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface NetworkApi {
 
-    @POST("052b7ce0-a2ad-11eb-bcc4-a996d3a50772")
+    @POST("19e676f-a336-11eb-8efc-d9e3bf61bc9d")
     suspend fun login(@Body loginRequest: LoginRequest)
     : LoginResponse
 

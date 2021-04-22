@@ -1,5 +1,6 @@
 package com.markoapps.testserviceproject
 
+import com.markoapps.testserviceproject.utils.Constans
 import com.markoapps.testserviceproject.utils.EncryptionUtil
 import org.junit.Test
 
@@ -12,7 +13,7 @@ class EncyptionUtilTest {
 
         val encryptionUtil = EncryptionUtil()
 
-        val result = encryptionUtil.decryptECB256(encryped)
+        val result = encryptionUtil.decryptECB256(Constans.secretKeySpec, encryped)
 
         assert(result == "It’s only after we’ve lost everything that we’re free to do anything.\u0005\u0005\u0005\u0005\u0005")
     }
